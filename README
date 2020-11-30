@@ -1,0 +1,99 @@
+Die Eltern, Pädagogen und Medizinwissenschaftler beschäftigen sich immer öfters mit der Frage, schadet früher Medienkonsum den Kindern oder ergeben sich eher neue Chancen im Bildungsbereich?
+Mit der Corona-Pandemie sollte man viele Schulen für Wochen und Monate schließen und die Frage Digitalisierung für Kinder rückte immer mehr ins Licht. Ich bin Mutter von einer Gymnasiastin und habe zahlreiche Chats und Forum-Diskussionen gelesen, wo viele Eltern behaupten, dass Kinder so spät wie möglich Bildschirm-Medien nutzen dürfen. Ein paar Kinder aus der Klasse meiner Tochter (13 Jahre alt) haben weder Laptop noch Handy. Ihre Eltern sind der Meinung, dass ein früher Zugang zu digitalen Geräten die schulische Leistung negativ beeinflusst. 
+
+In der vorliegenden Studie möchte ich ausgewählte Statistiken bereitstellen, die einen ersten Überblick bieten, um folgende Frage zu beantworten: welche Effekte haben  IKT*-Ressourcen, -Nutzung, Zugang zum Internet auf die schulische Leistung. Die Analyse erfolgt  anhand von Daten aus PISA 2015 und 2018. PISA steht für "Programme for International Student Assessment". Das Programm  bewertet, inwieweit 15-jährige Schüler gegen Ende ihrer Schulpflicht Schlüsselkenntnisse und -fähigkeiten erworben haben, die für eine uneingeschränkte Teilnahme an modernen Gesellschaften unerlässlich sind. Die Bewertung konzentriert sich auf die Kompetenzen in Lesen, Mathematik und Naturwissenschaften. Darüber hinaus füllten Schülerinnen und Schüler, Eltern und Lehrkräfte Fragebögen aus. Darin geht es z.B. um höchsten Bildungsabschluss der Eltern, sozioökonomischen Hintergrund und Computernutzung außerhalb der Schule.
+
+Dokumentation aller Instrumente, die in der Studie im Jahre 2015 in Deutschland eingesetzt wurden und für die Beschreibung bestimmter Namenspalten, Werte etc. dienen, sind im Skalenhandbuch für das Programm for International Student Assessment (PISA) 2015 erfasst. Diese kann ich auch für die Ergebnisse von PISA 2018  anwenden.
+Link:
+https://www.pisa.tum.de/fileadmin/w00bgi/www/Berichtsbaende_und_Zusammenfassungungen/Skalenhandbuch_PISA2015_openaccess.pdf
+
+*IKT: Informations- und Kommunikationstechnik.
+
+
+Pisa_project_IKT
+****************
+
+Daten für die Analyse habe ich direkt von der Internetseite von OECD geladen. 
+
+Data für 2018
+Link:
+https://www.oecd.org/pisa/data/2018database/
+
+Student questionnaire data files (597 MB)
+Link zum Downloaden:
+https://webfs.oecd.org/pisa2018/SAS_STU_QQQ.zip
+
+Code book
+Link zum Downloaden:
+https://webfs.oecd.org/pisa2018/PISA2018_CODEBOOK.xlsx
+
+Data für 2015
+Link:
+https://www.oecd.org/pisa/data/2015database/
+
+Student questionnaire data file (419MB)
+Link zum Downloaden:
+https://webfs.oecd.org/pisa/PUF_SPSS_COMBINED_CMB_STU_QQQ.zip
+
+Codebooks for the main files
+Link zum Downloaden:
+https://www.oecd.org/pisa/data/2015database/Codebook_CMB.xlsx
+
+
+pyreadstat documentation:
+https://ofajardo.github.io/pyreadstat_documentation/_build/html/index.html#metadata-object-description
+
+
+
+[1]Plausible Values (PVs)
+"... Im Gegensatz zu einfachen Punktschätzern für jede Person in der Stichprobe (d. h. ein Zahlenwert für jede Person) wird das erreichte Kompetenzniveau für jede Person durch mehrere Plausible Values abgebildet. Die grundlegende Idee der PVs leitet sich aus der Theorie zur multiplen Imputation fehlender Werte ab. Imputation bedeutet dabei, dass die fehlenden Werte durch Schätzwerte ersetzt werden, welche üblicherweise über geeignete Modelle bestimmt werden. Um die Unsicherheit der Schätzung angemessen zu berücksichtigen, wird dabei nicht nur ein Wert, sondern mehrere unterschiedliche Werte eingesetzt – daher multiple Imputation. In gleicher Weise wie bei so einer multiplen Imputation bilden auch die Plausible Values die Unsicherheit bei der Messung der Kompetenz auf der Ebene einzelner Schülerinnen und Schüler ab."
+S. 28 https://www.pisa.tum.de/fileadmin/w00bgi/www/Berichtsbaende_und_Zusammenfassungungen/PISA_2018_Online-Anhang.pdf
+
+
+
+
+[1] 'CNT': 'Country code 3-character'
+
+'CNTSTUID': 'Intl. Student ID'
+
+'ST004D01T': 'Student (Standardized) Gender'
+
+'IC002Q01HA': 'How old were you when you first used a digital device?'
+
+'IC004Q01HA': 'How old were you when you first accessed the Internet?'
+
+'ENTUSE': 'ICT Use Outside of School Leisure'/ 'ICT Nutzung außerhalb der Schule für Freizeitaktivitäten'
+
+'HOMESCH': 'ICT Use Outside of School for Schoolwork' / ' ICT Nutzung außerhalb der Schule für Hausaufgaben'
+
+'USESCH': 'Use of ICT at School at General' /  'ICT Nutzung innerhalb der Schule'
+
+'INTICT': 'Students’ ICT Interest)' / 'Interesse an ICT'
+
+'COMPICT': 'Students‘ Perceived ICT Competence' / 'Persönlich wahrgenommene ICT-Kompetenz'
+
+'AUTICT': 'Students‘ Per- ceived Autonomy Related to ICT Use'/ 'Wahrgenommene Autonomie bei der Nutzung von ICT'
+
+'SOIAICT': 'Students’ ICT as Topic in Social Interaction' / ' ICT als Thema der sozialen Interaktion'
+
+'ICTRES': 'Information and Communication Technology Resources' (at Home) / 'Besitz an Informations- und Technologiegütern'
+
+'MISCED': 'Mother’s Education' / 'Bildungsabschluss der Mutter' 
+
+'FISCED': 'Father’s Education (ISCED)' / 'Bildungsabschluss es Vaters'
+
+'HISCED': 'Highest Education of parents (ISCED)' / 'Höchster Bildungsabschluss der Eltern'
+
+'HISEI': 'Index highest parental occupational status' / 'Index der höchsten beruflichen Stellung der Eltern'
+
+'PARED': 'Index highest parental education in years of schooling' / ' Index des höchsten Bildungsabschlusses der Eltern in                   Ausbildungsjahren'
+
+'HOMEPOS': 'Home possessions (WLE)' / 'Index der Ausstattung des Elternhauses'
+
+'HEDRES': 'Home educational resources (WLE)' / 'Index der Bildungsressourcen im Elternhaus'
+
+'CULTPOSS': 'Cultural possessions at home (WLE)' / ' Index der Kulturgüter in der Familie'
+
+'WEALTH': 'Family wealth (WLE)' / 'Index des Wohlstands der Familie'
+
+'ESCS': 'Index of economic, social and cultural status (WLE)' / 'Sozioökonomischer und soziokultureller Status der Eltern'
